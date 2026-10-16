@@ -1,4 +1,4 @@
-# Tests DAW y DAM
+# Tests interactivos DAW y DAM
 
 Tests interactivos para repasar las asignaturas de los ciclos de Desarrollo de Aplicaciones Web y Multiplataforma, con preguntas revisadas y explicadas.
 
@@ -24,6 +24,10 @@ También es mi proyecto de aprendizaje. Me sirve para llevar lo que se ve en el 
 | Asignatura | Resultados | Mi progreso |
 |---|---|---|
 | ![Página de una asignatura con sus temas y el simulacro](docs/capturas/asignatura.png) | ![Pantalla de resultados](docs/capturas/resultados.png) | ![Mi progreso](docs/capturas/progreso.png) |
+
+En el móvil, con la barra de navegación abajo:
+
+<p align="center"><img src="docs/capturas/movil.png" width="300" alt="Página de una asignatura en el móvil, con la barra de navegación inferior"></p>
 
 ## Retos técnicos
 
