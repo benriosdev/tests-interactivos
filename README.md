@@ -50,6 +50,8 @@ En el móvil, con la barra de navegación abajo:
 - **Preguntas sin trampa.** Un validador en cada build avisa si la correcta tiende a ser la más larga (comparando con lo esperable por azar) y rechaza imágenes SVG con scripts o referencias externas.
 - **394 pruebas** de la lógica y del validador, que se ejecutan en milisegundos sin navegador.
 
+---
+
 **Rendimiento y SEO**
 
 El SEO y el rendimiento se trabajaron con mucho cuidado, página a página, para exprimir cada detalle. Funcionó: al buscar «tests interactivos daw dam», Google muestra la web la primera, tanto en la vista creada con IA como en los resultados (octubre de 2026).
