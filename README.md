@@ -52,6 +52,10 @@ En el móvil, con la barra de navegación abajo:
 
 **Rendimiento y SEO**
 
+El SEO y el rendimiento se trabajaron con mucho cuidado, página a página, para exprimir cada detalle. Funcionó: al buscar «tests interactivos daw dam», Google muestra la web la primera, tanto en la vista creada con IA como en los resultados (octubre de 2026).
+
+![Búsqueda «tests interactivos daw dam» en Google, con benrios.dev en primer lugar en la vista creada con IA y en los resultados](docs/capturas/google.png)
+
 Lighthouse en la portada (PageSpeed Insights):
 
 | Móvil | Escritorio |
