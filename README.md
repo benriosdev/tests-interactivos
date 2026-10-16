@@ -45,30 +45,6 @@ En el móvil, con la barra de navegación abajo:
 - **Constelaciones generadas.** Cada asignatura dibuja la suya con un árbol de expansión mínima y una semilla sacada de su nombre, y el mapa se pagina según el ancho de pantalla.
 - **Una nota que no engaña.** Se trunca y nunca redondea a favor, y el simulacro reparte las preguntas por turnos para que todos los temas pesen igual.
 
-**Calidad**
-
-- **Preguntas sin trampa.** Un validador en cada build avisa si la correcta tiende a ser la más larga (comparando con lo esperable por azar) y rechaza imágenes SVG con scripts o referencias externas.
-- **394 pruebas** de la lógica y del validador, que se ejecutan en milisegundos sin navegador.
-
----
-
-**Rendimiento y SEO**
-
-El SEO y el rendimiento se trabajaron con mucho cuidado, página a página, para exprimir cada detalle. Funcionó: al buscar «tests interactivos daw dam», Google muestra la web la primera, tanto en la vista creada con IA como en los resultados (octubre de 2026).
-
-![Búsqueda «tests interactivos daw dam» en Google, con benrios.dev en primer lugar en la vista creada con IA y en los resultados](docs/capturas/google.png)
-
-Lighthouse en la portada (PageSpeed Insights):
-
-| Móvil | Escritorio |
-|---|---|
-| ![Móvil: 100 de rendimiento, 96 de accesibilidad, 100 de buenas prácticas y 100 de SEO](docs/capturas/lighthouse-movil.png) | ![Escritorio: 100 en rendimiento, accesibilidad, buenas prácticas y SEO](docs/capturas/lighthouse-escritorio.png) |
-
-- **Una sola regla para indexar.** Una lista decide qué páginas van al sitemap, y todas las demás reciben `noindex, follow` solas, así que el sitemap y las etiquetas nunca se contradicen. Se indexan la portada, las asignaturas y los temas. Repasar, Mi progreso y el simulacro no, porque dependen de cada usuario.
-- **Sitemap propio, sin dependencias**, con la fecha de modificación sacada del último commit de cada página.
-- **Metadatos completos.** Canonical en cada página, Open Graph con una imagen propia de 1200×630, miga de pan con datos estructurados, un solo `h1` por página y descripciones de tema generadas de menos de 160 caracteres.
-- **Sin páginas pobres.** No se crea una página por pregunta, para no llenar el índice de contenido escaso. Los enunciados de cada tema están en su página.
-
 <details>
 <summary>Código: leer lo guardado sin fiarse</summary>
 
@@ -113,6 +89,30 @@ while (unidos.length < n) {
 }
 ```
 </details>
+
+**Calidad**
+
+- **Preguntas sin trampa.** Un validador en cada build avisa si la correcta tiende a ser la más larga (comparando con lo esperable por azar) y rechaza imágenes SVG con scripts o referencias externas.
+- **394 pruebas** de la lógica y del validador, que se ejecutan en milisegundos sin navegador.
+
+---
+
+**Rendimiento y SEO**
+
+El SEO y el rendimiento se trabajaron con mucho cuidado, página a página, para exprimir cada detalle. Funcionó: al buscar «tests interactivos daw dam», Google muestra la web la primera, tanto en la vista creada con IA como en los resultados (octubre de 2026).
+
+![Búsqueda «tests interactivos daw dam» en Google, con benrios.dev en primer lugar en la vista creada con IA y en los resultados](docs/capturas/google.png)
+
+Lighthouse en la portada (PageSpeed Insights):
+
+| Móvil | Escritorio |
+|---|---|
+| ![Móvil: 100 de rendimiento, 96 de accesibilidad, 100 de buenas prácticas y 100 de SEO](docs/capturas/lighthouse-movil.png) | ![Escritorio: 100 en rendimiento, accesibilidad, buenas prácticas y SEO](docs/capturas/lighthouse-escritorio.png) |
+
+- **Una sola regla para indexar.** Una lista decide qué páginas van al sitemap, y todas las demás reciben `noindex, follow` solas, así que el sitemap y las etiquetas nunca se contradicen. Se indexan la portada, las asignaturas y los temas. Repasar, Mi progreso y el simulacro no, porque dependen de cada usuario.
+- **Sitemap propio, sin dependencias**, con la fecha de modificación sacada del último commit de cada página.
+- **Metadatos completos.** Canonical en cada página, Open Graph con una imagen propia de 1200×630, miga de pan con datos estructurados, un solo `h1` por página y descripciones de tema generadas de menos de 160 caracteres.
+- **Sin páginas pobres.** No se crea una página por pregunta, para no llenar el índice de contenido escaso. Los enunciados de cada tema están en su página.
 
 ## Stack y cifras
 
