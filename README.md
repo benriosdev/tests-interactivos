@@ -86,6 +86,16 @@ Lighthouse en la portada (PageSpeed Insights):
 
 Cómo se consiguió, en [docs/retos.md](docs/retos.md#seo).
 
+## Arquitectura
+
+Todo se genera en la build y llega al navegador como archivos estáticos. En el navegador, la interfaz solo pinta y llama a la lógica pura, y el guardado pasa por una sola pieza.
+
+```mermaid
+flowchart LR
+  A["Contenido<br/>Markdown"] --> B["Validador"] --> C["Build<br/>Astro"] --> D["Web<br/>estática"]
+  D --> E["Interfaz"] --> F["Lógica pura"] --> G[("localStorage")]
+```
+
 ## Stack y cifras
 
 - **Astro** con salida estática, **TypeScript** y CSS propio, sin framework de UI.
