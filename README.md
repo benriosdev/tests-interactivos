@@ -78,7 +78,7 @@ Todos los retos, con fragmentos de código, y los errores que encontramos por el
 
 El SEO y el rendimiento se trabajaron con mucho cuidado, página a página, para exprimir cada detalle. Funcionó: al buscar «tests interactivos daw dam», Google muestra la web la primera, tanto en la vista creada con IA como en los resultados (octubre de 2026).
 
-![Búsqueda «tests interactivos daw dam» en Google, con benrios.dev en primer lugar en la vista creada con IA y en los resultados](docs/capturas/google.png)
+![Búsqueda «tests interactivos daw dam» en Google, con benrios.dev en primer lugar en la vista creada con IA y en los resultados](docs/capturas/google-tests-interactivos.png)
 
 Lighthouse en la portada (PageSpeed Insights):
 
