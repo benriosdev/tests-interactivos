@@ -114,6 +114,20 @@ Lighthouse en la portada (PageSpeed Insights):
 - **Metadatos completos.** Canonical en cada página, Open Graph con una imagen propia de 1200×630, miga de pan con datos estructurados, un solo `h1` por página y descripciones de tema generadas de menos de 160 caracteres.
 - **Sin páginas pobres.** No se crea una página por pregunta, para no llenar el índice de contenido escaso. Los enunciados de cada tema están en su página.
 
+## Errores que encontramos
+
+Algunos fallos reales del desarrollo, con su causa y cómo se resolvieron.
+
+- **El validador daba por repetidas opciones distintas.** `new HashMap<>()` y `new HashMap()` salían como duplicadas, porque al normalizar se quitaban todos los signos. Ahora el texto se compara normalizado, pero el código en línea se compara tal cual. Una prueba cubre el caso.
+- **27 falsos avisos de sesgo en un solo tema.** En las preguntas de verdadero o falso, «Verdadero» siempre es más larga que «Falso», así que el control de longitud saltaba sin motivo. Se sacaron de ese cálculo y tienen su propio control: avisar si la misma respuesta es la correcta en más del 70 %.
+- **Un fallo acertado seguía en Repasar.** El progreso solo se registraba al terminar el test, y quien salía a medias no veía el cambio. Se separó en dos operaciones: anotar cada respuesta al momento y sumar las cifras al terminar, para no contar nada dos veces.
+- **Un oyente de `scroll` por cada pregunta.** El botón de compartir de cada pregunta registraba un oyente al pintarse y nunca lo quitaba, así que se acumulaban durante el test. Se corrigió quitándolo cuando el panel salía del DOM y, al revisar coste y beneficio, se retiró la función entera.
+- **«Copiar» en Safari perdía el texto.** Con `navigator.share({ text, url })`, la opción de copiar de iOS repetía la dirección y descartaba el texto. Ahora el texto y la dirección van juntos en `text`, y el menú del sistema solo se usa en pantallas táctiles (`pointer: coarse`).
+- **Los enlaces de la barra se montaban sobre la marca en el móvil.** Una regla más específica (`.top nav a.desk`) ganaba a la que los escondía. La regla de ocultar pasó a usar el mismo selector.
+- **Una pestaña repintaba la otra con cada respuesta.** Los cambios hechos en otra pestaña se aplicaban y se fundían en cuanto llegaban. Ahora se aplican una sola vez, cuando el usuario vuelve a ver esa página.
+- **La analítica no contaba visitas.** El script puesto a mano enviaba los datos a un dominio que respondía 404 sin CORS. Se cambió al punto de recogida del propio dominio y se comprobó en la pestaña Red que la petición devuelve 204.
+- **Accesibilidad del 94 al 96 en móvil.** PageSpeed avisó de que ninguna página tenía `<main>` y de que la etiqueta de versión tenía un contraste de 4,2:1. Se añadió `<main>` en el layout común, ajustando el selector que daba el ancho para que los titulares siguieran a todo el ancho, y el color pasó a mezclarse con el del texto para llegar a 5,1:1.
+
 ## Stack y cifras
 
 - **Astro** con salida estática, **TypeScript** y CSS propio, sin framework de UI.
