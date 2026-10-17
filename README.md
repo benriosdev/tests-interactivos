@@ -22,7 +22,7 @@ Solo entonces empecé a construir, por fases: primero la base del proyecto y el 
 
 ### Trabajar con IA con método
 
-Lo desarrollé con Claude Code como asistente de programación, con estas reglas:
+Lo desarrollé con Claude Code como asistente de programación. Lo que sigue es un resumen a grandes rasgos: el día a día tuvo mucho más detalle, pero la esencia de cómo trabajé está en estas reglas:
 
 - **Contexto persistente.** Un archivo de instrucciones del proyecto recoge el stack, los comandos, las convenciones y las reglas de diseño ya cerradas, para que cada sesión empiece sabiendo lo que no se discute.
 - **Las decisiones como memoria.** Un registro numerado, con más de 90 decisiones, es la fuente de verdad. La IA lo lee al empezar, y cualquier cosa que lo contradiga se pregunta antes de hacerla.
