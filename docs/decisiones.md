@@ -1,6 +1,8 @@
+[← Volver al README](../README.md)
+
 # Decisiones de diseño
 
-Una selección de las decisiones técnicas que dieron forma a la web, en formato ADR corto: contexto, decisión, alternativas descartadas y consecuencias.
+Una selección de las decisiones técnicas que dieron forma a la web, en formato ADR corto: contexto, decisión, alternativas descartadas y consecuencias. Los retos técnicos y los errores que salieron por el camino están en [retos.md](retos.md).
 
 ### 1. Web estática con Astro y TypeScript, sin framework de UI
 

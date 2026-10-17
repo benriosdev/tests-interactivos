@@ -1,3 +1,5 @@
+[← Volver al README](../README.md)
+
 # Retos técnicos
 
 Los problemas más interesantes que hubo que resolver y los errores que salieron por el camino. Las decisiones de diseño, con su porqué, están en [decisiones.md](decisiones.md).
