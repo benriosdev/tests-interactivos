@@ -97,7 +97,7 @@ No salió solo: la accesibilidad en móvil empezó en 94 y llegó a 100 corrigie
 - **Sin páginas pobres.** No se crea una página por pregunta, para no llenar el índice de contenido escaso. Los enunciados de cada tema están en su página.
 - **Resultado.** Al buscar solo «tests daw», Google pone la web la primera en la vista creada con IA, en el panel de fuentes y en los resultados (octubre de 2026).
 
-![Búsqueda «tests daw» en Google, con benrios.dev en primer lugar en la vista creada con IA, en el panel de fuentes y en los resultados](capturas/google.png)
+![Búsqueda «tests daw» en Google, con benrios.dev en primer lugar en la vista creada con IA, en el panel de fuentes y en los resultados](capturas/google-tests-daw.png)
 
 ## Errores que encontramos
 
