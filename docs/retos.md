@@ -60,7 +60,7 @@ while (unidos.length < n) {
 ## Calidad
 
 - **Preguntas sin trampa.** Un validador en cada build avisa si la correcta tiende a ser la más larga (comparando con lo esperable por azar) y rechaza imágenes SVG con scripts o referencias externas.
-- **394 pruebas** de la lógica y del validador, que se ejecutan en milisegundos sin navegador.
+- **396 pruebas** de la lógica y del validador, que se ejecutan en milisegundos sin navegador.
 
 ## SEO
 
@@ -82,3 +82,4 @@ Algunos fallos reales del desarrollo, con su causa y cómo se resolvieron.
 - **Una pestaña repintaba la otra con cada respuesta.** Los cambios hechos en otra pestaña se aplicaban y se fundían en cuanto llegaban. Ahora se aplican una sola vez, cuando el usuario vuelve a ver esa página.
 - **La analítica no contaba visitas.** El script puesto a mano enviaba los datos a un dominio que respondía 404 sin CORS. Se cambió al punto de recogida del propio dominio y se comprobó en la pestaña Red que la petición devuelve 204.
 - **Accesibilidad del 94 al 96 en móvil.** PageSpeed avisó de que ninguna página tenía `<main>` y de que la etiqueta de versión tenía un contraste de 4,2:1. Se añadió `<main>` en el layout común, ajustando el selector que daba el ancho para que los titulares siguieran a todo el ancho, y el color pasó a mezclarse con el del texto para llegar a 5,1:1.
+- **Accesibilidad del 96 al 100 en móvil.** Quedaba el aviso de áreas táctiles, con dos casos. En el mapa encogido del móvil, el enlace con el nombre de la asignatura tapaba por abajo la zona táctil de las estrellas más altas, así que tocar una estrella podía abrir la asignatura. Ahora el hueco del nombre se calcula midiendo en la página el alto real de los nombres (con su fuente y el ancho de su columna), la fila crece sin encoger la constelación y, por si acaso, las estrellas quedan por encima de los nombres. Además, los puntos de página del mapa caían detrás de la barra inferior fija del móvil: con esa barra a la vista, el resumen y los puntos pasan a una cabecera encima del mapa, y el HTML se genera en el orden en que se ve, para que el tabulador y el lector de pantalla sigan ese mismo orden. Para que el alto medido no cambie al llegar la fuente, ahora se precarga.
