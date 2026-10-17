@@ -95,9 +95,9 @@ No salió solo: la accesibilidad en móvil empezó en 94 y llegó a 100 corrigie
 - **Sitemap propio, sin dependencias**, con la fecha de modificación sacada del último commit de cada página.
 - **Metadatos completos.** Canonical en cada página, Open Graph con una imagen propia de 1200×630, miga de pan con datos estructurados `BreadcrumbList`, un solo `h1` por página y descripciones de tema generadas de menos de 160 caracteres.
 - **Sin páginas pobres.** No se crea una página por pregunta, para no llenar el índice de contenido escaso. Los enunciados de cada tema están en su página.
-- **Resultado.** Al buscar «tests interactivos daw dam», Google muestra la web la primera, tanto en la vista creada con IA como en los resultados (octubre de 2026).
+- **Resultado.** Al buscar solo «tests daw», Google pone la web la primera en la vista creada con IA, en el panel de fuentes y en los resultados (octubre de 2026).
 
-![Búsqueda «tests interactivos daw dam» en Google, con benrios.dev en primer lugar en la vista creada con IA y en los resultados](capturas/google.png)
+![Búsqueda «tests daw» en Google, con benrios.dev en primer lugar en la vista creada con IA, en el panel de fuentes y en los resultados](capturas/google.png)
 
 ## Errores que encontramos
 
