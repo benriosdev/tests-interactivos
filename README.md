@@ -35,7 +35,7 @@ Lo desarrollé con Claude Code como asistente de programación. Lo que sigue es 
 
 Nada se da por bueno sin comprobarlo. Cada entrega pasa por lo mismo antes del commit:
 
-- `pnpm build`, que valida todo el contenido en modo estricto, comprueba los tipos (`astro check` y `tsc`), construye la web y revisa los 240 archivos generados para que no carguen nada externo ni lleven scripts en línea.
+- `pnpm build`, que valida todo el contenido en modo estricto, comprueba los tipos (`astro check` y `tsc`), construye la web y revisa los 240 archivos generados para que ningún HTML lleve scripts, estilos ni manejadores de eventos en línea.
 - `pnpm test`, con las 396 pruebas de la lógica y del validador.
 - Revisión visual en `pnpm dev`, en tema claro, en oscuro y en móvil, con capturas cuando algo no cuadra.
 - Lectura del diff final. Los commits los hago yo, uno a uno.
@@ -74,6 +74,8 @@ Todos los retos, con fragmentos de código, y los errores que encontramos por el
 
 ## Rendimiento y SEO
 
+**100 en las cuatro categorías de Lighthouse, en móvil y en escritorio.**
+
 El SEO y el rendimiento se trabajaron con mucho cuidado, página a página, para exprimir cada detalle. Funcionó: al buscar «tests interactivos daw dam», Google muestra la web la primera, tanto en la vista creada con IA como en los resultados (octubre de 2026).
 
 ![Búsqueda «tests interactivos daw dam» en Google, con benrios.dev en primer lugar en la vista creada con IA y en los resultados](docs/capturas/google.png)
@@ -84,7 +86,7 @@ Lighthouse en la portada (PageSpeed Insights):
 |---|---|
 | ![Móvil: 100 en rendimiento, accesibilidad, buenas prácticas y SEO](docs/capturas/lighthouse-movil.png) | ![Escritorio: 100 en rendimiento, accesibilidad, buenas prácticas y SEO](docs/capturas/lighthouse-escritorio.png) |
 
-Cómo se consiguió, en [docs/retos.md](docs/retos.md#seo).
+Cómo se consiguió, con el rendimiento, la accesibilidad y el SEO al detalle, en [docs/retos.md](docs/retos.md#rendimiento-accesibilidad-y-seo).
 
 ## Arquitectura
 
