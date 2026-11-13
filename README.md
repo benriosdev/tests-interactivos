@@ -25,7 +25,7 @@ Solo entonces empecé a construir, por fases: primero la base del proyecto y el 
 Lo desarrollé con Claude Code como asistente de programación. Lo que sigue es un resumen a grandes rasgos: el día a día tuvo mucho más detalle, pero la esencia de cómo trabajé está en estas reglas:
 
 - **Contexto persistente.** Un archivo de instrucciones del proyecto recoge el stack, los comandos, las convenciones y las reglas de diseño ya cerradas, para que cada sesión empiece sabiendo lo que no se discute.
-- **Las decisiones como memoria.** Un registro numerado, con más de 90 decisiones, es la fuente de verdad. La IA lo lee al empezar, y cualquier cosa que lo contradiga se pregunta antes de hacerla.
+- **Las decisiones como memoria.** Un registro numerado, con más de 110 decisiones, es la fuente de verdad. La IA lo lee al empezar, y cualquier cosa que lo contradiga se pregunta antes de hacerla.
 - **Opciones, no hechos consumados.** Cada cambio de diseño o arquitectura llega como varias opciones con una recomendación razonada, y la elección es mía.
 - **Sesiones cortas y con un objetivo.** Una tarea por sesión, leyendo solo los archivos necesarios, para que el contexto no se degrade.
 - **Revisiones especializadas.** Pautas de diseño antes de proponer una pantalla, revisión de código antes de cada commit y revisión de seguridad antes de publicar.
@@ -50,7 +50,8 @@ Las dependencias son las justas, siete: Astro, `yaml` y `sharp` para construir l
 - **Simulacro de examen** de 30 preguntas y 60 minutos con todos los temas.
 - **Repasar** reúne las preguntas falladas y las marcadas hasta que se aciertan.
 - **Mi progreso** con racha, meta diaria, logros y rangos.
-- **Buscador** de asignaturas, temas y preguntas (Ctrl/Cmd + K).
+- **Buscador** de categorías, temas y preguntas (Ctrl/Cmd + K).
+- **Otros tests** fuera del ciclo: Git y GitHub, Docker, y HTTP y APIs.
 - Tema claro y oscuro, atajos de teclado y sin cuentas ni registro.
 
 | Asignatura | Resultados | Mi progreso |
@@ -67,7 +68,7 @@ Algunos de los problemas más interesantes que hubo que resolver:
 
 - **Progreso que no se pierde**, sin cuentas ni servidor: versionado, validado al leer y con respaldo automático si algo se daña.
 - **Audio sin archivos**, con la voz del navegador y una barra de progreso afinada con la posición real de la voz.
-- **Buscador de 2.300 preguntas sin librerías**, con un índice que solo se descarga cuando alguien busca.
+- **Buscador de más de 4.200 preguntas sin librerías**, con un índice que solo se descarga cuando alguien busca.
 - **Constelaciones generadas** con un árbol de expansión mínima y una semilla sacada del nombre de cada asignatura.
 
 Todos los retos, con fragmentos de código, y los errores que encontramos por el camino están en [docs/retos.md](docs/retos.md).
@@ -102,7 +103,7 @@ flowchart LR
 
 - **Astro** con salida estática, **TypeScript** y CSS propio, sin framework de UI.
 - **Vitest** para las pruebas.
-- 10 asignaturas y 2.321 preguntas.
+- 16 asignaturas y 3 otros tests (Git y GitHub, Docker, y HTTP y APIs): 4.232 preguntas.
 
 Las decisiones de diseño, con su porqué, están en [docs/decisiones.md](docs/decisiones.md), y los retos técnicos y los errores, en [docs/retos.md](docs/retos.md).
 
