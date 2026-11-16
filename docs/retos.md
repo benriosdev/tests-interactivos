@@ -14,7 +14,7 @@ Los problemas más interesantes que hubo que resolver y los errores que salieron
 ## Datos y lógica
 
 - **Progreso que no se pierde.** Sin cuentas ni servidor, con versión, validación al leer, respaldo automático si algo se daña y soporte para varias pestañas abiertas.
-- **Buscador de más de 4.200 preguntas sin librerías.** Un índice generado en la build que se descarga al escribir la tercera letra, se valida y muestra un esqueleto mientras llega. Ignora tildes y mayúsculas y resalta el texto original.
+- **Buscador de más de 4.400 preguntas sin librerías.** Un índice generado en la build que se descarga al escribir la tercera letra, se valida y muestra un esqueleto mientras llega. Ignora tildes y mayúsculas y resalta el texto original.
 - **Constelaciones generadas.** Cada asignatura dibuja la suya con un árbol de expansión mínima y una semilla sacada de su nombre, y el mapa se pagina según el ancho de pantalla.
 - **Una nota que no engaña.** Se trunca y nunca redondea a favor, y el simulacro reparte las preguntas por turnos para que todos los temas pesen igual.
 

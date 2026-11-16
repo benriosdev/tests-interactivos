@@ -74,7 +74,7 @@ Una selección de las decisiones técnicas que dieron forma a la web, en formato
 
 ### 6. Un validador de contenido en cada build
 
-**Contexto.** Más de 4.200 preguntas en Markdown no se pueden revisar a mano en cada cambio.
+**Contexto.** Más de 4.400 preguntas en Markdown no se pueden revisar a mano en cada cambio.
 
 **Decisión.**
 - La build falla si hay errores: más de una correcta o ninguna, entre dos y cuatro opciones, explicación obligatoria, ids con formato fijo y sin duplicados, temas declarados sin archivo o campos desconocidos.

@@ -68,7 +68,7 @@ Algunos de los problemas más interesantes que hubo que resolver:
 
 - **Progreso que no se pierde**, sin cuentas ni servidor: versionado, validado al leer y con respaldo automático si algo se daña.
 - **Audio sin archivos**, con la voz del navegador y una barra de progreso afinada con la posición real de la voz.
-- **Buscador de más de 4.200 preguntas sin librerías**, con un índice que solo se descarga cuando alguien busca.
+- **Buscador de más de 4.400 preguntas sin librerías**, con un índice que solo se descarga cuando alguien busca.
 - **Constelaciones generadas** con un árbol de expansión mínima y una semilla sacada del nombre de cada asignatura.
 
 Todos los retos, con fragmentos de código, y los errores que encontramos por el camino están en [docs/retos.md](docs/retos.md).
@@ -103,7 +103,7 @@ flowchart LR
 
 - **Astro** con salida estática, **TypeScript** y CSS propio, sin framework de UI.
 - **Vitest** para las pruebas.
-- 16 asignaturas y 3 otros tests (Git y GitHub, Docker, y HTTP y APIs): 4.232 preguntas.
+- 17 asignaturas y 3 otros tests (Git y GitHub, Docker, y HTTP y APIs): 4.471 preguntas.
 
 Las decisiones de diseño, con su porqué, están en [docs/decisiones.md](docs/decisiones.md), y los retos técnicos y los errores, en [docs/retos.md](docs/retos.md).
 
